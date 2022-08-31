@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Logo Upload</h1>
+    <p>
+        Please, Select your logo
+    </p>
+    <p class="text-danger text-end">
+        @Html.ValidationSummary()
+    </p>
+    <br />
+    <form enctype="multipart/form-data" method="post">
+
+        <div class="mb-3">
+            <label asp-for="Form.Logo" class="form-label">logo : </label>
+            <input asp-for="Form.Logo" class="form-control" type="file" />
+            <span asp-validation-for="Form.Logo"></span>
+        </div>
+        <div class=" ">
+            <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+        </div>
+
+    </form>
+
+</div>
