@@ -2,4 +2,4 @@
 
 A sample file validation with FluentValidation and MimetypeDetective Packages
 
-Article : [Complete Guide](https://20devs.com/file-validation-fluentvalidation/)
+Article : [Complete Guide](https://TwentyDevs.com/file-validation-fluentvalidation/)
